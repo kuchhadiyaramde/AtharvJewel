@@ -1,10 +1,10 @@
 const gallery = document.getElementById('gallery');
 const loadMoreButton = document.getElementById('loadMoreButton');
 
-let photos = [];
+//let photos = [];
 let currentIndex = 0;
 const itemsPerPage = 5;
-
+/*
 // Function to fetch photos from JSON file
 async function fetchPhotos() {
     try {
@@ -15,7 +15,7 @@ async function fetchPhotos() {
         console.error('Error fetching photos:', error);
     }
 }
-
+*/
 // Function to display photos
 function displayPhotos() {
     const endIndex = currentIndex + itemsPerPage;
