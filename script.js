@@ -1,11 +1,21 @@
 const gallery = document.getElementById('gallery');
 const loadMoreButton = document.getElementById('loadMoreButton');
 
+let photos = [];
 
 let currentIndex = 0;
 const itemsPerPage = 5;
 
- 
+ // Function to fetch photos from JSON file
+async function fetchPhotos() {
+    try {
+        const response = await fetch('photos.json');
+        photos = await response.json();
+        displayPhotos();
+    } catch (error) {
+        console.error('Error fetching photos:', error);
+    }
+}
 
 // Function to display photos
 function displayPhotos() {
@@ -47,4 +57,5 @@ function displayPhotos() {
 // Load more photos when button is clicked
 loadMoreButton.addEventListener('click', displayPhotos);
 
- 
+ // Fetch photos on page load
+fetchPhotos();
