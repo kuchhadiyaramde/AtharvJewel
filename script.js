@@ -57,4 +57,4 @@ function displayPhotos() {
 loadMoreButton.addEventListener('click', displayPhotos);
 
 // Fetch photos on page load
-fetchPhotos();
+//fetchPhotos();
