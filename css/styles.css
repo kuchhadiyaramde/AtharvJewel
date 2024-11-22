@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Acmel|Lobster|Patua+One|RubiK|Sniglet');
+
+.card-img-top {
+    height: 215px;
+}
+
+.product-rating {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    color: #e60000;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --sniglet-font: "Sniglet", cursive;
+    --rubik: "Rubik", cursive;
+    --patua: "Patua One", cursive;
+    --lobster: "Lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0)
+}
+
+header a {
+    font-family: var(--sniglet-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header {
+    background: #dd2476;
+    background: var(--bggradient);
+}
+
+header .nav-item:last-child {
+    padding-right: 10.5em;
+}
+
+header .nav-item {
+    padding: 0.9em;
+}
+
+header .navbar-brand {
+    padding-left: 8rem;
+}
+
+header .nav-link:hover {
+    color: black;
+}
+
+
+.card {
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.card .card-title {
+    background: rgba(208, 241, 241, 0.1);
+}
+
+.card .badgePosition {
+    position: absolute;
+    right: 0.5px;
+    top: -1px;
+    margin: auto;
+}
+
+.map iframe {
+    padding: 1em;
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p.text-muted {
+    color: darkgray !important;
+}
+
+footer p>span {
+    color: #ff512f;
+}
